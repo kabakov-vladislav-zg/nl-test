@@ -1,4 +1,12 @@
-<script setup></script>
+<script setup>
+import { getCity, getCities } from "@/api/city";
+import { getCategories, getProducts } from "@/api/catalog";
+
+getCity({ cityId: 1 })
+getCities({ term: 'каз' })
+getCategories({ cityId: 3049 })
+getProducts({ cityId: 1, categorySlug: 'ny-gifts' })
+</script>
 
 <template>
   <h1>You did it!</h1>
