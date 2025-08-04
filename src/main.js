@@ -1,3 +1,7 @@
+import 'modern-normalize';
+import './style/layout.css';
+import './style/FuturaPT/stylesheet.css';
+
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
